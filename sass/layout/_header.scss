@@ -1,0 +1,121 @@
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-link-main-color);
+  display: block;
+}
+
+.header__logo-color {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-navigation {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-navigation__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  display: block;
+  padding: 32px 0;
+  transition: color var(--timing-color-fon-shadow);
+}
+
+.header-navigation__link:hover,
+.header-navigation__link:focus {
+  color: #2196f3;
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-contact__svg-mail,
+.header-contact__svg-tel {
+  margin-right: 10px;
+  fill: #757575;
+  display: block;
+  transition: fill var(--timing-color-fon-shadow);
+}
+
+.header-contact__svg-mail:hover,
+.header-contact__svg-tel:focus {
+  color: #2196f3;
+}
+
+.header-contact__link-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--timing-color-fon-shadow);
+}
+
+.header-contact__link-mail:hover,
+.header-contact__link-mail:focus {
+  color: #2196f3;
+}
+
+.header-contact__link-mail:hover .header-contact__svg-mail,
+.header-contact__link-mail:focus .header-contact__svg-mail {
+  fill: currentColor;
+}
+
+.header-contact__link-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--timing-color-fon-shadow);
+}
+
+.header-contact__link-tel:hover,
+.header-contact__link-tel:focus {
+  color: #2196f3;
+}
+
+.header-contact__link-tel:hover .header-contact__svg-tel,
+.header-contact__link-tel:focus .header-contact__svg-tel {
+  fill: currentColor;
+}
