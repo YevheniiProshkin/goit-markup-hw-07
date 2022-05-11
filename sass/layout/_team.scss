@@ -88,10 +88,7 @@
   background-color: #2196f3;
 }
 
-.team__contact-link:hover .team__contact-svg {
-  fill: #ffffff;
-}
-
+.team__contact-link:hover .team__contact-svg,
 .team__contact-link:focus .team__contact-svg {
   fill: #ffffff;
 }

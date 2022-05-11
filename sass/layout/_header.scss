@@ -28,16 +28,16 @@
   color: #000000;
 }
 
-.header-navigation {
+.header__navigation {
   display: flex;
   margin-left: 93px;
 }
 
-.header-navigation__item:not(:last-child) {
+.header__navigation-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-navigation__link {
+.header__navigation-link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -49,34 +49,34 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header-navigation__link:hover,
-.header-navigation__link:focus {
+.header__navigation-link:hover,
+.header__navigation-link:focus {
   color: #2196f3;
 }
 
-.header-contact {
+.header__contact {
   display: flex;
   margin-left: auto;
 }
 
-.header-contact__item:not(:last-child) {
+.header__contact-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-contact__svg-mail,
-.header-contact__svg-tel {
+.header__contact-svg-mail,
+.header__contact-svg-tel {
   margin-right: 10px;
   fill: #757575;
   display: block;
   transition: fill var(--timing-color-fon-shadow);
 }
 
-.header-contact__svg-mail:hover,
-.header-contact__svg-tel:focus {
+.header__contact-svg-mail:hover,
+.header__contact-svg-tel:focus {
   color: #2196f3;
 }
 
-.header-contact__link-mail {
+.header__contact-link-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -88,17 +88,17 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header-contact__link-mail:hover,
-.header-contact__link-mail:focus {
+.header__contact-link-mail:hover,
+.header__contact-link-mail:focus {
   color: #2196f3;
 }
 
-.header-contact__link-mail:hover .header-contact__svg-mail,
-.header-contact__link-mail:focus .header-contact__svg-mail {
+.header__contact-link-mail:hover .header__contact-svg-mail,
+.header__contact-link-mail:focus .header__contact-svg-mail {
   fill: currentColor;
 }
 
-.header-contact__link-tel {
+.header__contact-link-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -110,12 +110,12 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header-contact__link-tel:hover,
-.header-contact__link-tel:focus {
+.header__contact-link-tel:hover,
+.header__contact-link-tel:focus {
   color: #2196f3;
 }
 
-.header-contact__link-tel:hover .header-contact__svg-tel,
-.header-contact__link-tel:focus .header-contact__svg-tel {
+.header__contact-link-tel:hover .header__contact-svg-tel,
+.header__contact-link-tel:focus .header__contact-svg-tel {
   fill: currentColor;
 }
