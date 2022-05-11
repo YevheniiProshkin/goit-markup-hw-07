@@ -13,6 +13,11 @@
     url(../img/Imgservicefon.jpg);
   background-position: center;
   background-repeat: no-repeat;
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #188ce8;
+  }
 }
 
 .service__title {
@@ -49,9 +54,4 @@
   padding: 10px 32px;
   border: 0;
   transition: background-color var(--timing-color-fon-shadow);
-}
-
-.service__button:hover,
-.service__button:focus {
-  background-color: #188ce8;
 }

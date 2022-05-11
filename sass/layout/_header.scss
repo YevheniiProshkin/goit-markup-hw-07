@@ -33,10 +33,6 @@
   margin-left: 93px;
 }
 
-.header__navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header__navigation-link {
   position: relative;
   font-weight: 500;
@@ -49,18 +45,9 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header__navigation-link:hover,
-.header__navigation-link:focus {
-  color: #2196f3;
-}
-
 .header__contact {
   display: flex;
   margin-left: auto;
-}
-
-.header__contact-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .header__contact-svg-mail,
@@ -69,11 +56,6 @@
   fill: #757575;
   display: block;
   transition: fill var(--timing-color-fon-shadow);
-}
-
-.header__contact-svg-mail:hover,
-.header__contact-svg-tel:focus {
-  color: #2196f3;
 }
 
 .header__contact-link-mail {
@@ -88,16 +70,6 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header__contact-link-mail:hover,
-.header__contact-link-mail:focus {
-  color: #2196f3;
-}
-
-.header__contact-link-mail:hover .header__contact-svg-mail,
-.header__contact-link-mail:focus .header__contact-svg-mail {
-  fill: currentColor;
-}
-
 .header__contact-link-tel {
   font-weight: 500;
   font-size: 14px;
@@ -110,12 +82,37 @@
   transition: color var(--timing-color-fon-shadow);
 }
 
-.header__contact-link-tel:hover,
-.header__contact-link-tel:focus {
-  color: #2196f3;
-}
+.header {
+  &__navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
 
-.header__contact-link-tel:hover .header__contact-svg-tel,
-.header__contact-link-tel:focus .header__contact-svg-tel {
-  fill: currentColor;
+  &__navigation-link:hover,
+  &__navigation-link:focus {
+    color: #2196f3;
+  }
+
+  &__contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__contact-link-mail:hover,
+  &__contact-link-mail:focus {
+    color: #2196f3;
+  }
+
+  &__contact-link-mail:hover &__contact-svg-mail,
+  &__contact-link-mail:focus &__contact-svg-mail {
+    fill: currentColor;
+  }
+
+  &__contact-link-tel:hover,
+  &__contact-link-tel:focus {
+    color: #2196f3;
+  }
+
+  &__contact-link-tel:hover &__contact-svg-tel,
+  &__contact-link-tel:focus &__contact-svg-tel {
+    fill: currentColor;
+  }
 }

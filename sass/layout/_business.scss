@@ -1,5 +1,9 @@
 .business {
   padding-bottom: 94px;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .buisness__container {
@@ -21,10 +25,6 @@
 
 .business__item {
   position: relative;
-}
-
-.business__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .business__item-title {

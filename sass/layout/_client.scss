@@ -33,13 +33,15 @@
   transition: var(--timing-color-fon-shadow);
 }
 
-.client__link:hover,
-.client__link:focus {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
-}
+.client {
+  &__link:hover,
+  &__link:focus {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+  }
 
-.client__link:hover .client__logo,
-.client__link:focus .client__logo {
-  fill: #2196f3;
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+    fill: #2196f3;
+  }
 }

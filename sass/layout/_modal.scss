@@ -11,10 +11,6 @@
   transition: fill var(--timing-color-fon-shadow);
 }
 
-.modal__close-btn:hover .modal__logo-close {
-  fill: #2196f3;
-}
-
 .modal__logo-close {
   display: block;
   transition: fill var(--timing-color-fon-shadow);
@@ -86,14 +82,6 @@
   transition: border-color var(--timing-color-fon-shadow);
 }
 
-.modal__input:focus {
-  border-color: #2196f3;
-}
-
-.modal__input:focus + .modal__icon {
-  fill: #2196f3;
-}
-
 .modal__icon {
   position: absolute;
   left: 12px;
@@ -158,15 +146,6 @@
   transition: fill var(--timing-color-fon-shadow);
 }
 
-.modal__imput-check:checked + .modal__check-text .modal__check-icon {
-  background-color: #2196f3;
-  border: none;
-}
-
-.modal__imput-check:checked + .modal__check-text .modal__icon-vector {
-  fill: #ffffff;
-}
-
 .modal__conditions {
   display: inline-block;
   letter-spacing: 0.03em;
@@ -195,7 +174,30 @@
   transition: background-color var(--timing-color-fon-shadow);
 }
 
-.modal__submit:hover,
-.modal__submit:focus {
-  background-color: #188ce8;
+.modal {
+  &__close-btn:hover &__logo-close {
+    fill: #2196f3;
+  }
+
+  &__input:focus {
+    border-color: #2196f3;
+  }
+
+  &__input:focus + &__icon {
+    fill: #2196f3;
+  }
+
+  &__imput-check:checked + &__check-text &__check-icon {
+    background-color: #2196f3;
+    border: none;
+  }
+
+  &__imput-check:checked + .modal__check-text &__icon-vector {
+    fill: #ffffff;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    background-color: #188ce8;
+  }
 }

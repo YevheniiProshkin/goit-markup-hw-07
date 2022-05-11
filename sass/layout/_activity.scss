@@ -1,6 +1,10 @@
 .activity {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .activity__list {
@@ -24,10 +28,6 @@
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
-}
-
-.activity__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .activity__title {
